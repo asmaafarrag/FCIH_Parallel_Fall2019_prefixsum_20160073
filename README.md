@@ -1,7 +1,9 @@
 # FCIH_Parallel_Fall2019_prefixsum_20160073
 
 
-Asmaa Mohammed AbdElRahim frrag 20160073 .... Eman AbdElfattah attia AbdElfattah 20160095 .... Mariam said bayoumi Ali 20160418
+Asmaa Mohammed AbdElRahim frrag 20160073 .. اسماء محمد عبدالرحيم فراج
+Eman AbdElfattah attia AbdElfattah 20160095 ..ايمان عبدالفتاح عطية 
+Mariam said bayoumi Ali 20160418 .. مريم سعيد بيومي
 
 Algorithm :
 
