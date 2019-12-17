@@ -25,7 +25,7 @@ public class mainnew  {
 //        int n = 16;
         int n = 8; // arraysize
 
-       //int InArr[] = new int[]{4,9,5,1,0,5,1,6,6,4,6,5,1,6,9,3};
+        int InArr[] = new int[]{4,9,5,1,0,5,1,6,6,4,6,5,1,6,9,3};
         int input[] = new int[]{6,4,16,10,16,14,2,8};
         int output[] = new int[n];
         
