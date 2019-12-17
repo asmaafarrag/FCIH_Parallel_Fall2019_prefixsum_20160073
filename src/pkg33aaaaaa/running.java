@@ -12,27 +12,28 @@ import java.util.concurrent.CountDownLatch;
  * @author asmaa
  */
 public class running implements Runnable{
-    int startIndex ,endIndex;
-    int n,i;
+    int inner;
+    int outer;
     int input[] ;
     int output[] ;
     int Prefixsum[];
+    int startIndex ,endIndex;
+    int n,i;
     CountDownLatch latch;
-    int inner;
-    int outer;
+    
     
    public running(int startIndex,int endIndex, int n,int i ,int inner,int outer,int input[] ,int output[] ,int Prefixsum[],CountDownLatch latch ){
       
-      
-        this.startIndex = startIndex;
-        this.endIndex = endIndex;
-        this.n = n;
-        this.i = i;
         this.inner = inner;
         this.input = input;
         this.outer=outer;
         this.output = output;
         this.Prefixsum = Prefixsum;
+        this.startIndex = startIndex;
+        this.endIndex = endIndex;
+        this.n = n;
+        this.i = i;
+        
         this.latch = latch;
        
        
@@ -47,16 +48,14 @@ public class running implements Runnable{
             
             outer();
             
-            //endControler.countDown();
+       
         }
          
     }
     
 public void inner(){
 
-
-
-                output[startIndex]=input[startIndex];
+           output[startIndex]=input[startIndex];
             
             for(int j = startIndex+1 ; j < endIndex ; j++)
             {
@@ -72,7 +71,8 @@ public void inner(){
 
 }
 
-public void outer(){
+public void outer()
+{
 
 for(int j = startIndex ; j < endIndex ; j++)
             {
@@ -80,5 +80,4 @@ for(int j = startIndex ; j < endIndex ; j++)
             }
 
 }      
-       
 }
